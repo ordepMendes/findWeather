@@ -1,11 +1,12 @@
 import { useCallback } from "react";
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from "expo-font";
-import { Overpass_400Regular } from '@expo-google-fonts/overpass';
+import { Overpass_400Regular, Overpass_600SemiBold } from '@expo-google-fonts/overpass';
 
 const useLoadFonts = () => {
     const [fontsLoaded] = useFonts({
-        'Overpass': Overpass_400Regular
+        'Overpass': Overpass_400Regular,
+        'Overpass_600': Overpass_600SemiBold
       });
 
     const onLayoutRootView = useCallback(async () => {
